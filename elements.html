@@ -204,6 +204,31 @@
 <script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
 <script src="plugins/easing/easing.js"></script>
 <script src="js/elements_custom.js"></script>
-
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		var accordions = document.querySelectorAll(".accordion_container");
+	
+		accordions.forEach(function(accordion) {
+			var header = accordion.querySelector(".accordion");
+			var panel = accordion.querySelector(".accordion_panel");
+	
+			header.addEventListener("click", function() {
+				panel.classList.toggle("active");
+				var panelHeight = panel.scrollHeight + "px";
+				if (panel.style.maxHeight) {
+					panel.style.maxHeight = null;
+				} else {
+					panel.style.maxHeight = panelHeight;
+				}
+			});
+	
+			// Agregar eventos táctiles para dispositivos móviles
+			header.addEventListener("touchstart", function(event) {
+				event.preventDefault(); // Evitar el comportamiento táctil por defecto
+				header.click(); // Simular un clic en el encabezado del acordeón
+			});
+		});
+	});
+	</script>
 </body>
 </html>
