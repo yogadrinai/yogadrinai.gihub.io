@@ -269,6 +269,20 @@
 <script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
 <script src="plugins/easing/easing.js"></script>
 <script src="js/courses_custom.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var hamburgerIcon = document.getElementById("hamburger_icon");
+        var menuClose = document.querySelector(".menu_close");
+        var mainMenu = document.querySelector(".menu_inner");
 
+        hamburgerIcon.addEventListener("click", function() {
+            mainMenu.classList.toggle("show");
+        });
+
+        menuClose.addEventListener("click", function() {
+            mainMenu.classList.remove("show");
+        });
+    });
+</script>
 </body>
 </html>
