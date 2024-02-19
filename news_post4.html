@@ -236,9 +236,9 @@
 <script src="js/news_post_custom.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        var hamburgerIcon = document.getElementById("hamburger_icon");
+        var hamburgerIcon = document.querySelector(".hamburger_container i");
         var menuClose = document.querySelector(".menu_close");
-        var mainMenu = document.querySelector(".menu_inner");
+        var mainMenu = document.querySelector(".menu_container");
 
         hamburgerIcon.addEventListener("click", function() {
             mainMenu.classList.toggle("show");
@@ -249,5 +249,6 @@
         });
     });
 </script>
+
 </body>
 </html>
