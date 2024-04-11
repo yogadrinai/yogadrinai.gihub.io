@@ -1311,3 +1311,12 @@ section
 {
 	margin-right: 0px;
 }
+.videos-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-wrapper {
+    width: 250px; /* ajusta según tus necesidades */
+    margin-right: 70px; /* espacio entre los videos */
+}
