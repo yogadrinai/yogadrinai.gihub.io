@@ -1311,3 +1311,31 @@ section
 {
 	margin-right: 0px;
 }
+.accordion {
+    margin-left: 20px; 
+}
+.accordion-button {
+    background-color: #c2b0b0;
+    color: #e60aba;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #580543;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+	margin-left: 20px;
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
