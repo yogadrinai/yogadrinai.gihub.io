@@ -134,6 +134,7 @@ h1, h2, h3, h4, h5, h6
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-align: center;
 }
 h1::selection, 
 h2::selection, 
@@ -1338,4 +1339,33 @@ section
 
 .accordion-item.active .accordion-content {
     display: block;
+}
+.news_post_text p {
+    margin-left: 20px; /* Agregar margen izquierdo */
+}
+
+.video-container iframe {
+    display: inline-block;
+    vertical-align: middle;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    overflow: hidden;
+	text-align: center;
+
+}
+
+.video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
 }

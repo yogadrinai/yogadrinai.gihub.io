@@ -389,3 +389,34 @@
 {
 	
 }
+
+@media (max-width: 768px) {
+    .news_post_text {
+        width: 90%;
+        padding-left: 12px; /* Agrega un relleno a la izquierda para separar los párrafos del borde izquierdo */
+    }
+
+    .news_post_text p {
+        margin-left: 12px !important; /* Usa !important para asegurarte de que este estilo prevalezca */
+    }
+
+    .accordion-button {
+        font-size: 14px;
+    }
+
+    .news_post_title {
+        font-size: 20px;
+    }
+
+    .accordion-item {
+        padding: 10px;
+    }
+
+    .news_post_image {
+        display: none; /* Ocultar la imagen en pantallas pequeñas */
+    }
+
+    #video-heading {
+        display: block; /* Mostrar el encabezado del video en pantallas pequeñas */
+    }
+}
