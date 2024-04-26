@@ -1369,3 +1369,35 @@ section
     width: 100%;
     height: 100%;
 }
+.videos-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video-wrapper {
+    margin: 0 10px;
+}
+
+.video-wrapper iframe {
+    width: 560px; /* Ancho deseado del iframe */
+    height: 315px; /* Alto deseado del iframe */
+}
+/* Estilos para el contenedor del video en la página del blog */
+.video-blog {
+    margin: 0 auto 20px; /* Modifica los márgenes del contenedor del video */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 560px; /* O el ancho deseado */
+    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+    overflow: hidden; /* Evita que el video se desborde del contenedor */
+    position: relative; /* Establece una posición relativa para el contenedor */
+}
+
+/* Estilos para el video dentro del contenedor en la página del blog */
+.video-blog iframe {
+    width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
+    height: 100%; /* Ajusta la altura del video al 100% del contenedor */
+    position: absolute; /* Establece una posición absoluta para el video */
+    top: 0; /* Coloca el video en la parte superior del contenedor */
+    left: 0; /* Coloca el video en la parte izquierda del contenedor */
+    object-fit: cover; /* Hace que el video se ajuste al tamaño del contenedor manteniendo su relación de aspecto */
+}
