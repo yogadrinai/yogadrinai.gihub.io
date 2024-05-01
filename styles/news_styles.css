@@ -901,9 +901,9 @@ section
 10. Sidebar
 *********************************/
 
-.sidebar
-{
-	width: 100%;
+.sidebar {
+    display: flex; /* Utiliza un modelo de caja flexible */
+    justify-content: center; /* Centra horizontalmente los elementos */
 }
 .sidebar_section
 {
@@ -1007,26 +1007,34 @@ section
 	margin-left: 5px;
 	margin-right: 5px;
 }
-.tags
-{
-	margin-top: 50px;
+.tags {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    margin-top: 50px; /* Margen superior */
+    flex-wrap: wrap; /* Envuelve los elementos si no caben en la misma línea */
 }
-.tag
-{
-	height: 40px;
-	background: #e07cb2;
-	margin-right: 12px;
-	margin-bottom: 10px;
+
+/* Estilos para cada botón */
+.tag {
+    height: 40px;
+    background: #e07cb2;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    display: flex; /* Utiliza un modelo de caja flexible */
+    align-items: center; /* Centra verticalmente el contenido */
 }
-.tag a
-{
-	display: block;
-	font-size: 16px;
-	font-weight: 500;
-	color: #FFFFFF;
-	line-height: 40px;
-	padding-left: 30px;
-	padding-right: 30px;
+
+.tag a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    padding: 0 20px; /* Ajusta el relleno horizontal */
+    border-radius: 5px; /* Añade esquinas redondeadas a los botones */
+}
+
+.tag a:hover {
+    background-color: #d56aa1; /* Cambia el color de fondo al pasar el ratón sobre los botones */
 }
 
 /*********************************
@@ -1184,4 +1192,49 @@ section
 .footer_social .menu_social_item:last-child
 {
 	margin-right: 0px;
+}
+.flipbox-wrapper{
+	display: flex;
+    flex-wrap: wrap; /* Envuelve los flipbox cuando no haya espacio en la línea */
+    justify-content: center;
+
+}
+.flipbox-container {
+    perspective: 1000px;
+    position: relative;
+    width: 400px; /* Ancho del flipbox */
+    height: 400px; /* Altura del flipbox */
+    display: inline-block; /* Mostrar en línea para colocar uno al lado del otro */
+    margin: 10px; /* Espacio entre los flipbox */
+}
+
+.flipbox-front, .flipbox-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.6s;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column; /* Para colocar el título debajo de la imagen */
+}
+
+.flipbox-front {
+    background-color: #d61d95;
+}
+
+.flipbox-back {
+    background-color: #7d7878;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flipbox-container:hover .flipbox-front {
+    transform: rotateY(-180deg);
+}
+
+.flipbox-container:hover .flipbox-back {
+    transform: rotateY(0deg);
 }
