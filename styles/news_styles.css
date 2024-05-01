@@ -1238,3 +1238,6 @@ section
 .flipbox-container:hover .flipbox-back {
     transform: rotateY(0deg);
 }
+.news_post_title{
+	text-align: center;
+}

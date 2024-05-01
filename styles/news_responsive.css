@@ -412,11 +412,17 @@
         padding: 10px;
     }
 
-    .news_post_image {
-        display: none; /* Ocultar la imagen en pantallas pequeñas */
-    }
+    
 
     #video-heading {
         display: block; /* Mostrar el encabezado del video en pantallas pequeñas */
     }
 }
+@media only screen and (max-width: 350px) {
+    .flipbox-front img,
+    .flipbox-back img {
+        max-width: 80%; /* Reducir el ancho máximo al 90% del contenedor */
+        height: auto;
+    }
+}
+
