@@ -1379,8 +1379,8 @@ section
 }
 
 .video-wrapper iframe {
-    width: 560px; /* Ancho deseado del iframe */
-    height: 315px; /* Alto deseado del iframe */
+    width: 460px; /* Ancho deseado del iframe */
+    height: 215px; /* Alto deseado del iframe */
 }
 /* Estilos para el contenedor del video en la página del blog */
 .video-blog {
