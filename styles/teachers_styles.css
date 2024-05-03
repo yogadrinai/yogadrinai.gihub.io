@@ -1142,3 +1142,22 @@ section
 {
 	margin-right: 0px;
 }
+.pbars_accordions .accordion_item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.pbars_accordions .accordion_title {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pbars_accordions .accordion_content {
+    display: none;
+    padding: 10px;
+}
+
+.pbars_accordions .accordion_item.active .accordion_content {
+    display: block;
+}

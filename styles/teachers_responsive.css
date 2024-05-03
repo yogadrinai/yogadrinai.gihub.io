@@ -366,3 +366,11 @@
 {
 	
 }
+@media screen and (max-width: 600px) {
+    .pbars_accordions .accordion_title {
+        padding: 10px 20px; /* Aumenta el padding horizontal */
+    }
+    .pbars_accordions .accordion_content {
+        padding: 10px 20px; /* Aumenta el padding horizontal */
+    }
+}
