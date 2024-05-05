@@ -418,8 +418,8 @@
 {
 	
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .image_container {
-        margin-bottom: 20%; /* Ajusta este valor según sea necesario */
+        margin-bottom: 20vh; /* Ajusta según sea necesario para evitar que se corte la imagen */
     }
 }
