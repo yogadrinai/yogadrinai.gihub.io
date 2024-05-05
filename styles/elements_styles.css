@@ -843,7 +843,7 @@ section
 
 .image_container {
     height: 100%; /* Establece la altura igual al acordeón */
-	margin-bottom: 10vh;
+	max-height: 70vh;
 }
 
 .image_container img {
