@@ -1142,22 +1142,228 @@ section
 {
 	margin-right: 0px;
 }
-.pbars_accordions .accordion_item {
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
+
+.pbars_accordions
+{
+	margin-top: 20px;
+}
+.pbars_accordions_container
+{
+	padding-top: 20px;
+}
+.pbar_container
+{
+	background: #f8f4f4;
+	padding-left: 99px;
+	padding-right: 97px;
+	padding-top: 20px;
+	padding-bottom: 45px;
+}
+.pb_item
+{
+	margin-bottom: 18px;
+}
+.pb_item h4
+{
+	color: #1a1a1a;
+	font-weight: 400 !important;
+	padding-left: 2px;
+	margin-bottom: 13px;
+}
+.skill_bars
+{
+	height: 5px;
 }
 
-.pbars_accordions .accordion_title {
-    background-color: #f1f1f1;
-    padding: 10px;
-    cursor: pointer;
+/*********************************
+8.3 Accordions
+*********************************/
+
+.elements_accordions
+{
+	padding-top: 10px;
 }
 
-.pbars_accordions .accordion_content {
-    display: none;
-    padding: 10px;
+.image_container {
+    height: 100%; /* Establece la altura igual al acordeón */
 }
 
-.pbars_accordions .accordion_item.active .accordion_content {
-    display: block;
+.image_container img {
+    height: 100%; /* Ajusta la altura de la imagen al contenedor */
+    width: auto; /* Ajusta el ancho automáticamente para mantener la proporción */
+    display: block; /* Para asegurar que la imagen se ajuste correctamente */
+}
+
+.accordion_container
+{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.accordion
+{
+	height: 60px;
+	width: 100%;
+	background: #f8f4f4;
+	padding-left: 30px;
+	cursor: pointer;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.accordion.active
+{
+	background: #e07cb2;
+	color: #FFFFFF;
+}
+.accordion:active
+{
+	background: #e07cb2 !important;
+	color: #FFFFFF;
+}
+.accordion::after
+{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 62px;
+	height: 100%;
+	content: '+';
+	background: #e07cb2;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: 500;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.accordion.active::after
+{
+	content: '-';
+}
+.accordion:hover
+{
+	background: #e4e4e4;
+}
+.accordion_panel
+{
+	padding-left: 30px;
+	padding-right: 30px;
+	max-height: 0;
+	overflow: hidden;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+.accordion_panel p
+{
+	padding-top: 15px;
+}
+
+/*********************************
+8.4 Loaders
+*********************************/
+
+.loaders
+{
+	margin-top: 119px;
+}
+.elements_loaders_container
+{
+	margin-top: 60px;
+}
+.loader
+{
+	width: 195px;
+	height: 195px;
+	margin: 0 auto;
+}
+.loader_text
+{
+	font-size: 16px;
+	font-weight: 500;
+	color: #1a1a1a;
+	margin-top: 26px;
+}
+.loader .progressbar-text
+{
+	top: 50% !important;
+}
+.loader_sub
+{
+	font-size: 15px;
+	font-weight: 400;
+	color: #a5a5a5;
+	margin-top: 5px;
+}
+
+/*********************************
+8.5 Milestones
+*********************************/
+
+.milestones
+{
+	width: 100%;
+	margin-top: 102px;
+}
+.milestones_container
+{
+	width: 100%;
+	padding-top: 118px;
+	padding-bottom: 107px;
+	margin-top: 108px;
+}
+.milestones_background
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+.milestone
+{
+	width: 100%;
+}
+.milestone_icon
+{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+}
+.milestone_icon img
+{
+	width: 100%;
+}
+.milestone_counter
+{
+	font-size: 36px;
+	font-weight: 500;
+	color: #e07cb2;
+	line-height: 1;
+	margin-top: 41px;
+}
+.milestone_text
+{
+	font-size: 22px;
+	font-weight: 500;
+	color: #FFFFFF;
+	margin-top: 3px;
 }
