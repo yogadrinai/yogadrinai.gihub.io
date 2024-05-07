@@ -682,6 +682,11 @@ section
 	font-size: 72px;
 	font-weight: 400;
 	color: #FFFFFF;
+	animation: animacion 2.5s steps(35), transparent .5s step-end infinite alternate;
+	width: 15.1em;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
 }
 .hero_slide_content h1 span
 {
@@ -691,18 +696,32 @@ section
 	margin-left: -12px;
 	margin-right: -12px;
 }
+
+@keyframes animacion{
+	from{
+		width: 0px;
+	}
+}
+@keyframes transparencia {
+    50% {
+        border-color: transparent;
+    }
+}
 .animated
 {
 	-webkit-animation-duration : 1s !important;
 	animation-duration : 1s !important;
 	-webkit-animation-delay : 500ms;
 	animation-delay : 500ms;
+	animation: animacion 2.5s steps(35), transparencia .5s step-end infinite alternate;
 }
 .animate-out
 {
 	-webkit-animation-delay : 0ms;
 	animation-delay : 0ms;
 }
+
+
 
 /*********************************
 5.2 Hero Slider Navigation
