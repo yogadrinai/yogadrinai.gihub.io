@@ -853,8 +853,10 @@ section
 .footer
 {
 	width: 100%;
-	padding-top: 86px;
-	background: #1a1a1a;
+	padding-top: 50px;
+	background: #800080;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #ffc0cb, #800080);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #ffc0cb, #800080); 
 }
 .footer .section_title h1
 {
@@ -910,9 +912,9 @@ section
 
 .footer_content 
 {
-	padding-top: 80px;
+	padding-top: 0px;
 	padding-bottom: 83px;
-	border-bottom: solid 2px #4d4e4e;
+	border-bottom: solid 2px #FFFFFF;
 }
 .footer_content .logo_container
 {
@@ -946,7 +948,7 @@ section
 .footer_list_item a
 {
 	font-size: 14px;
-	color: #a5a5a5;
+	color: #FFFFFF;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -961,7 +963,7 @@ section
 {
 	font-size: 14px;
 	font-weight: 400;
-	color: #a5a5a5;
+	color: #FFFFFF;
 	margin-bottom: 22px;
 }
 .footer_contact_item:last-child
