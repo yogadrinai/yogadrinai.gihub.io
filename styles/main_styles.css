@@ -641,85 +641,73 @@ section
 /*********************************
 5.1 Hero Slider
 *********************************/
-
-.hero_slider_container
-{
-	width: 100%;
-	height: 100%;
-}
-.hero_slide
-{
-	width: 100%;
-	height: 100%;
-}
-.hero_slide_background
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-}
-.hero_slide_container
-{
-	width: 100%;
-	height: 100vh;
-}
-.hero_slide_content
-{
-	max-width: 80%;
-	-webkit-transform: translateY(30px);
-	-moz-transform: translateY(30px);
-	-ms-transform: translateY(30px);
-	-o-transform: translateY(30px);
-	transform: translateY(30px);
-}
-.hero_slide_content h1
-{
-	font-size: 72px;
-	font-weight: 400;
-	color: #FFFFFF;
-	animation: animacion 2.5s steps(35), transparent .5s step-end infinite alternate;
-	width: 15.1em;
-	white-space: nowrap;
-	overflow: hidden;
-	border-right: 3px solid;
-}
-.hero_slide_content h1 span
-{
-	background: #e07cb2;
-	padding-left: 13px;
-	padding-right: 13px;
-	margin-left: -12px;
-	margin-right: -12px;
+/* CSS para la animación de escritura */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
 
-@keyframes animacion{
-	from{
-		width: 0px;
-	}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
 }
-@keyframes transparencia {
-    50% {
-        border-color: transparent;
-    }
+
+/* Resto de tu CSS */
+.hero_slider_container {
+    width: 100%;
+    height: 100%;
 }
-.animated
-{
-	-webkit-animation-duration : 1s !important;
-	animation-duration : 1s !important;
-	-webkit-animation-delay : 500ms;
-	animation-delay : 500ms;
-	animation: animacion 2.5s steps(35), transparencia .5s step-end infinite alternate;
+
+.hero_slide {
+    width: 100%;
+    height: 100%;
 }
-.animate-out
-{
-	-webkit-animation-delay : 0ms;
-	animation-delay : 0ms;
+
+.hero_slide_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
+
+.hero_slide_container {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero_slide_content {
+    max-width: 80%;
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    transform: translateY(30px);
+}
+
+.hero_slide_content h1 {
+    font-size: 72px;
+    font-weight: 400;
+    color: #FFFFFF;
+    animation: typing 2.5s steps(35), blink-caret .5s step-end infinite alternate;
+    width: 15.1em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+.hero_slide_content h1 span {
+    background: #e07cb2;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+/* Resto de tu CSS */
 
 
 
