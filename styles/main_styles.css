@@ -643,9 +643,10 @@ section
 *********************************/
 /* CSS para la animación de escritura */
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
@@ -689,14 +690,17 @@ section
 }
 
 .hero_slide_content h1 {
-    font-size: 72px;
-    font-weight: 400;
+    
+    font-weight: 100;
     color: #FFFFFF;
-    animation: typing 2.5s steps(35), blink-caret .5s step-end infinite alternate;
-    width: 15.1em;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
+	font-size: 4vw; /* Cambié la unidad a 'vw' para que el tamaño del texto se ajuste según el ancho de la pantalla */
+    width: auto;
+}
+.hero_slider_container .hero_slide .hero_slide_content .animated h1 {
+    animation: typing 2.5s steps(35), blink-caret .5s step-end infinite alternate !important;
 }
 
 .hero_slide_content h1 span {
@@ -763,6 +767,7 @@ section
 {
 	right: 4.32%;
 }
+
 
 /*********************************
 6. Hero Boxes

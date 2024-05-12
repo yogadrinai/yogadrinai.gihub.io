@@ -506,3 +506,9 @@
     max-width: 100%;
     height: auto;
 }
+@media screen and (max-width: 768px) {
+    .hero_slider_container .hero_slide .hero_slide_content h1 {
+        font-size: 6vw; /* Cambié el tamaño del texto a 8vw para dispositivos móviles */
+        margin-bottom: 20px; /* Añadí un margen inferior para separar el texto de los botones */
+    }
+}

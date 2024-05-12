@@ -107,22 +107,20 @@ $(document).ready(function() {
             }
 
             // Fired before current slide change
-            owl.on('change.owl.carousel', function(event) {
-                var $currentItem = $('.owl-item', owl).eq(event.item.index);
-                var $elemsToanim = $currentItem.find("[data-animation-out]");
-                setAnimation($elemsToanim, 'out');
-            });
-
-            // Fired after current slide has been changed
             owl.on('changed.owl.carousel', function(event) {
-                var $currentItem = $('.owl-item', owl).eq(event.item.index);
-                var $elemsToanim = $currentItem.find("[data-animation-in]");
-                setAnimation($elemsToanim, 'in');
-
-                // Animar el título de la diapositiva actual
-                var title = $currentItem.find('.hero_slide_content h1');
-                title.css('animation', 'typing 2.5s steps(35), blink-caret .5s step-end infinite alternate');
-            })
+				var $currentItem = $('.owl-item', owl).eq(event.item.index);
+				var $elemsToanim = $currentItem.find("[data-animation-in]");
+				setAnimation($elemsToanim, 'in');
+			
+				// Animar el título de la diapositiva actual
+				var title = $currentItem.find('.hero_slide_content h1');
+				title.css('animation', 'typing 2.5s steps(35), blink-caret .5s step-end infinite alternate');
+			
+				// Restablecer la animación de los títulos de las otras diapositivas
+				$('.hero_slide_content h1').not(title).css('animation', 'none');
+			});
+			
+			
 
             // Handle Custom Navigation
             if ($('.hero_slider_left').length) {
