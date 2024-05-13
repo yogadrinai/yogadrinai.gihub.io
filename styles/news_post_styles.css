@@ -799,20 +799,20 @@ section
 {
 	padding-left: 31px;
 	margin-top: -7px;
+	
 }
-.news_post_title a
+.news_post_title_container h1{
+	text-align: center;
+}
+.news_post_title
 {
 	font-size: 36px;
 	font-weight: 500;
 	line-height: 1.2;
 	color: #1a1a1a;
+	
 }
-.news_post_title a:hover,
-.news_post_author a:hover,
-.news_post_comments a:hover
-{
-	color: #a5a5a5;
-}
+
 .news_post_meta
 {
 	color: #1a1a1a;
