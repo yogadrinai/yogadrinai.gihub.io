@@ -1349,7 +1349,17 @@ section
     width: 100%;
     max-width: 800px; /* Ancho máximo del contenedor del video */
     margin: 0 auto;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
 }
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho disponible del contenedor */
+    height: 100%; /* Ocupa todo el alto disponible del contenedor */
+}
+
 
 .video-wrapper {
     position: relative;
@@ -1357,6 +1367,8 @@ section
     padding-bottom: 56.25%; /* Proporción 16:9 */
     margin-bottom: 20px; /* Espacio inferior entre el contenedor y otros elementos */
     overflow: hidden;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 .video-wrapper iframe {
