@@ -1344,63 +1344,31 @@ section
     margin-left: 20px; /* Agregar margen izquierdo */
 }
 
-.video-container iframe {
-    display: inline-block;
-    vertical-align: middle;
-}
 .video-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
-    overflow: hidden;
-	text-align: center;
-
+    max-width: 800px; /* Ancho máximo del contenedor del video */
+    margin: 0 auto;
 }
 
 .video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    margin-bottom: 20px; /* Espacio inferior entre el contenedor y otros elementos */
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
     position: absolute;
+    width: 100%; /* Ajusta el porcentaje según prefieras */
+    height: 100%; /* Ajusta el porcentaje según prefieras */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    border: 0; /* Quita el borde del iframe */
 }
 
-.video-wrapper iframe {
-    width: 100%;
-    height: 100%;
-}
-.videos-container {
-    display: flex;
-    justify-content: center;
-}
 
-.video-wrapper {
-    margin: 0 10px;
-}
-
-.video-wrapper iframe {
-    width: 460px; /* Ancho deseado del iframe */
-    height: 215px; /* Alto deseado del iframe */
-}
-/* Estilos para el contenedor del video en la página del blog */
-.video-blog {
-    margin: 0 auto 20px; /* Modifica los márgenes del contenedor del video */
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-    max-width: 560px; /* O el ancho deseado */
-    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
-    overflow: hidden; /* Evita que el video se desborde del contenedor */
-    position: relative; /* Establece una posición relativa para el contenedor */
-}
-
-/* Estilos para el video dentro del contenedor en la página del blog */
-.video-blog iframe {
-    width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
-    height: 100%; /* Ajusta la altura del video al 100% del contenedor */
-    position: absolute; /* Establece una posición absoluta para el video */
-    top: 0; /* Coloca el video en la parte superior del contenedor */
-    left: 0; /* Coloca el video en la parte izquierda del contenedor */
-    object-fit: cover; /* Hace que el video se ajuste al tamaño del contenedor manteniendo su relación de aspecto */
-}
 .news_post_video {
 	position: relative;
 	width: 100%;
