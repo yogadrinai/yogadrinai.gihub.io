@@ -508,12 +508,12 @@
 }
 
 @media screen and (max-width: 768px) {
-    .h1 {
-        font-size: 24px; /* Tamaño de fuente más pequeño */
-        color: #00b3ff; /* Cambio de color del texto a azul */
-        text-shadow: 0 0 10px rgba(0, 179, 255, 0.7), /* Sombra azul */
-                     0 0 20px rgba(0, 179, 255, 0.7), /* Sombra azul */
-                     0 0 30px rgba(0, 179, 255, 0.7); /* Sombra azul */
+    .h1 span{
+        font-size: 30px; /* Tamaño de fuente más pequeño */
+        color: #fff; /* Cambio de color del texto a blanco */
+        text-shadow: 0 0 15px rgba(0, 179, 255, 0.9), /* Sombra azul */
+                     0 0 30px rgba(0, 179, 255, 0.9), /* Sombra azul */
+                     0 0 45px rgba(0, 179, 255, 0.9); /* Sombra azul */
         animation: none; /* Eliminar la animación */
     }
 }

@@ -736,6 +736,7 @@ section
     margin-right: -12px;
 }
 
+
 /* Resto de tu CSS */
 
 
@@ -931,10 +932,7 @@ section
 9. Popular
 *********************************/
 
-.popular
-{
 
-}
 .course_boxes
 {
 	margin-top: 68px;
@@ -1365,10 +1363,7 @@ input:last-of-type
 	margin-top: 21px;
 	margin-bottom: 13px;
 }
-.event_image
-{
 
-}
 .event_image img
 {
 	width: 100%;
