@@ -641,19 +641,8 @@ section
 /*********************************
 5.1 Hero Slider
 *********************************/
-/* CSS para la animación de escritura */
-@keyframes typing {
-	from { width: 0 }
-	to { width: 100% }
-  }
-  
 
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: white; }
-}
 
-/* Resto de tu CSS */
 .hero_slider_container {
     width: 100%;
     height: 100%;
