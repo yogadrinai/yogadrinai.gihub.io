@@ -631,21 +631,20 @@ section
 /*********************************
 5. Home
 *********************************/
-
-.home
-{
-	width: 100%;
-	height: 100vh;
+.home {
+    width: 100%;
+    height: 100vh;
 }
 
 /*********************************
 5.1 Hero Slider
 *********************************/
 
-
 .hero_slider_container {
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .hero_slide {
@@ -662,82 +661,71 @@ section
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    z-index: -1;
 }
 
 .hero_slide_container {
     width: 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero_slide_content {
     max-width: 80%;
-    -webkit-transform: translateY(30px);
-    -moz-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    -o-transform: translateY(30px);
     transform: translateY(30px);
+    text-align: center;
 }
 
+.h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+}
 
-.h1{
-	display:flex;
-	color: transparent;
-	
-	justify-content:center;
-	align-items:center;
+h1 span {
+    font-size: 4vw;
+    font-family: 'bad script', cursive;
+    animation: animate 3s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+    display: inline-block;
+    transform: perspective(500px) rotateY(calc(var(--i) * 5deg));
+    transition: transform 0.5s ease;
+}
 
-	}
-	h1 span{
-	font-size: 4vw;
-	font-family: 'bad script', cursive;
-	animation:animate 3s linear infinite;
-	animation-delay: calc(0.1s * var(--i));
-	}
-	
-	@keyframes animate{
-	0%
-	{
-	color:#fff;
-	filter: blur(2px) hue-rotate(0deg);
-	text-shadow:0 0 10px #00b3ff,
-	0 0 20px #00b3ff,
-	0 0 40px #00b3ff,
-	0 0 80px #00b3ff,
-	0 0 120px #00b3ff,
-	0 0 200px #00b3ff,
-	0 0 300px #00b3ff,
-	0 0 400px #00b3ff;
-	}
-	30%, 70%{
-	color:#fff;
-	filter: blur(2px) hue-rotate(360deg);
-	text-shadow:0 0 10px #00b3ff,
-	0 0 20px #00b3ff,
-	0 0 40px #00b3ff,
-	0 0 80px #00b3ff,
-	0 0 120px #00b3ff;
-	
-	}
-	100%
-	{
-	
-	color: transparent;
-	box-shadow:none;
-	filter: blur(2px) hue-rotate(0deg);
-	
-	}
-	}
-
+h1 span:hover {
+    transform: perspective(500px) rotateY(0deg);
+}
 
 .hero_slide_content h1 span {
-    padding-left: 13px;
-    padding-right: 13px;
-    margin-left: -12px;
-    margin-right: -12px;
+    padding: 0 13px;
+    margin: 0 -12px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #b7146b, 2px 2px #e07cb2, 4px 4px rgb(26, 142, 153), 6px 6px white;
 }
 
+@keyframes animate {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
 
-/* Resto de tu CSS */
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    h1 span {
+        font-size: 8vw;
+        transform: none;
+        text-shadow: none;
+        color: #b7146b;
+    }
+
+    .hero_slide_content {
+        transform: none;
+    }
+}
 
 
 
