@@ -725,7 +725,7 @@ h1 span:hover {
     }
 
     h1 span {
-        font-size: 2vw; /* Reduce el tamaño de fuente */
+        font-size: 8px; /* Reduce el tamaño de fuente */
         transform: none;
         text-shadow: none;
         color: #b7146b;
