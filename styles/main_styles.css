@@ -685,6 +685,7 @@ section
     justify-content: center;
     align-items: center;
     color: transparent;
+    flex-wrap: nowrap;
 }
 
 h1 span {
@@ -695,6 +696,7 @@ h1 span {
     display: inline-block;
     transform: perspective(500px) rotateY(calc(var(--i) * 5deg));
     transition: transform 0.5s ease;
+    padding: 0 8px;
 }
 
 h1 span:hover {
@@ -702,8 +704,6 @@ h1 span:hover {
 }
 
 .hero_slide_content h1 span {
-    padding: 0 13px;
-    margin: 0 -12px;
     text-transform: uppercase;
     text-shadow: 1px 1px #b7146b, 2px 2px #e07cb2, 4px 4px rgb(26, 142, 153), 6px 6px white;
 }
@@ -715,17 +715,24 @@ h1 span:hover {
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
+    .hero_slide_content {
+        transform: none;
+        padding: 0 10px;
+    }
+
+    h1 {
+        flex-wrap: nowrap;
+    }
+
     h1 span {
         font-size: 6vw;
         transform: none;
         text-shadow: none;
         color: #b7146b;
-    }
-
-    .hero_slide_content {
-        transform: none;
+        padding: 0 4px;
     }
 }
+
 
 
 
