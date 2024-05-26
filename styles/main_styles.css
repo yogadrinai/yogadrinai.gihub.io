@@ -725,14 +725,13 @@ h1 span:hover {
     }
 
     h1 span {
-        font-size: 4vw; /* Ajusta el tamaño de fuente */
+        font-size: 2vw; /* Reduce el tamaño de fuente */
         transform: none;
         text-shadow: none;
         color: #b7146b;
-        padding: 0 2px; /* Reduce el padding */
+        padding: 0 1px; /* Reduce el padding */
     }
 }
-
 
 /*********************************
 5.2 Hero Slider Navigation
