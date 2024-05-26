@@ -725,14 +725,13 @@ h1 span:hover {
     }
 
     h1 span {
-        font-size: 5vw;
+        font-size: 4vw; /* Ajusta el tamaño de fuente */
         transform: none;
         text-shadow: none;
         color: #b7146b;
-        padding: 0 2px;
+        padding: 0 2px; /* Reduce el padding */
     }
 }
-
 
 
 /*********************************
